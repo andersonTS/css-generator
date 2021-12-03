@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./sketchy.css">
+</head>
+<body class="bg-info">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1 class="title-text">CSS code generator</h1>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid bg-info h-100 pt-5">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-3">
+                <div class="accordion text-info" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item container p-0">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                        <button class="accordion-button collapsed text-info open-button" id="open-button-1" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                          Border radius
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+                        <div class="accordion-body">
+                            <label for="borderThikness" class="form-label">Frame thickness</label>
+                            <input type="range" min="1" max="20" value="3"class="form-range w-100" id="borderThikness"><br>
+                            <label for="borderType" class="form-label">Border type</label>
+                            <select name="" id="borderType" class="w-100">
+                                <option value="solid">solid</option>
+                                <option value="dotted">dotted</option>
+                                <option value="dashed">dashed</option>
+                                <option value="double">double</option>
+                            </select>
+                            <br>
+                            <label for="borderColor" class="form-label">Border color</label>
+                            <input type="color" name="" id="borderColor" class="w-100">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item container p-0">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                        <button class="accordion-button collapsed text-info open-button" id="open-button-2" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                          Box shadow
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body">
+                          <label for="offsetX" class="form-label">Offset-x</label>
+                          <input type="range" min="1" max="30" value="0" class="form-range w-100" id="offsetX"><br>
+                          <label for="offsetY" class="form-label">Offset-y</label>
+                          <input type="range" min="1" max="30" value="0" class="form-range w-100" id="offsetY"><br>
+                          <label for="blurRadius" class="form-label">Blur radius</label>
+                          <input type="range" min="1" max="30" value="0" class="form-range w-100" id="blurRadius"><br>
+                          <label for="spreadRadius" class="form-label">Spread radius</label>
+                          <input type="range" min="1" max="30" value="0" class="form-range w-100" id="spreadRadius"><br>
+                          <label for="shadowColor" class="form-label">Shadow color</label>
+                          <input type="color" name="" id="shadowColor" class="w-100">
+                          <label for="boxSize" class="form-label">Box size</label>
+                          <input type="range" min="0" max="500" value="150" class="form-range w-100" id="boxSize"><br>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item container p-0">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                        <button class="accordion-button collapsed text-info open-button" id="open-button-3" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                          Font
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                        <div class="accordion-body">
+                          <label for="textSize" class="form-label">Font size</label>
+                          <input type="range" min="10" max="50" value="20" class="form-range w-100" id="textSize"><br>
+                          <label for="letterSp" class="form-label">Letter spacing</label>
+                          <input type="range" min="1" max="30" value="0" class="form-range w-100" id="letterSp"><br>
+                          <label for="textColor" class="form-label">Text color</label>
+                          <input type="color" id="textColor" class="w-100">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item container p-0">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingFour" >
+                          <button id="btnFlex"  class="accordion-button collapsed text-info open-button" id="open-button-4" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                            Display flex
+                          </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                          <div class="accordion-body">
+                            <label for="typeDisplay" class="form-label">display</label>
+                            <select id="typeDisplay">
+                              <option value="block">block</option>
+                              <option value="flex">flex</option>
+                            </select><br>
+                            <label for="direction" class="form-label">flex-direction</label>
+                            <select id="direction">
+                              <option value="row">row</option>
+                              <option value="row-reverse">row-reverse</option>
+                              <option value="column">column</option>
+                              <option value="column-reverse">column-reverse</option>
+                            </select><br>
+                            <label for="justifyContent" class="form-label">justify-content</label>
+                            <select id="justifyContent">
+                              <option value="flex-start">flex-start</option>
+                              <option value="flex-end">flex-end</option>
+                              <option value="center">center</option>
+                              <option value="space-between">space-between</option>
+                              <option value="space-around">space-around</option>
+                            </select><br>
+                            <label for="alignItems" class="form-label">align-items</label>
+                            <select id="alignItems">
+                              <option value="flex-start">flex-start</option>
+                              <option value="flex-end">flex-end</option>
+                              <option value="center">center</option>
+                              <option value="baseline">baseline</option>
+                              <option value="strech">strech</option>
+                            </select>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item container p-0">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                          <button class="accordion-button collapsed text-info open-button" id="open-button-5" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                            Transform
+                          </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+                          <div class="accordion-body">
+                            <label for="boxScale" class="form-label">Box Scale</label>
+                            <input type="range" min="0.1" max="2" value="1" step="0.1" class="form-range w-100" id="boxScale"><br>
+                            <label for="boxRotate" class="form-label">Rotate</label>
+                            <input type="range" min="0" max="360" value="0" step="1" class="form-range w-100" id="boxRotate"><br>
+                            <label for="boxTranslateX" class="form-label">Translate X</label>
+                            <input type="range" min="-50" max="50" value="0" step="1" class="form-range w-100" id="boxTranslateX"><br>
+                            <label for="boxTranslateY" class="form-label">Translate Y</label>
+                            <input type="range" min="-50" max="50" value="0" step="1" class="form-range w-100" id="boxTranslateY"><br>
+                            <label for="boxSkewX" class="form-label">Skew X</label>
+                            <input type="range" min="-50" max="50" value="0" step="1" class="form-range w-100" id="boxSkewX"><br>
+                            <label for="boxSkewY" class="form-label">Skew Y</label>
+                            <input type="range" min="-50" max="50" value="0" step="1" class="form-range w-100" id="boxSkewY"><br>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container bg-white col-7 flex-wrap flex-column p-3 rounded" >
+                <div class="row">
+                    <div id="box" class="col-12">
+                        <div class="box-container border-info ">
+                            <div id="boxChange">SOME TEXT</div>
+                        </div>
+                    </div>
+                    <div id ="boxFlex" class="col-12">
+                        <div id="boxContainerFlex" class="box-container-flex border-info p-2">
+                            <div class="boxChangeFlex">BOX 1</div>
+                            <div class="boxChangeFlex">BOX 2</div>
+                            <div class="boxChangeFlex">BOX 3</div>
+                        </div>
+                    </div>
+                    <div id="boxTranslate" class="col-12">
+                      <div class="box-container border-info ">
+                          <div id="boxChangeTranslate" class="bg-info"></div>
+                      </div>
+                  </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-1 mt-2"></div>
+                      <div class="col-1 mt-2"><input type="button" class="pt-5 pb-5 btn btn-info js-copy-btn" data-clipboard-target=".cb-target-1" id="copyBtn" value="Copy"></div>
+                      <div class="col-9 mt-2 rounded bg-info">
+                          <p class="text-white">CSS code:</p>
+                          <p id="cssCode" class="p-3 text-white fs-5 cb-target-1"></p>
+                      </div>
+                      <div class="col-1"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1"></div>
+            <div class="container-fluid mt-5">
+              <div class="row">
+                <div class="col-12 text-center">
+                  <h1 class="title-text">Created by TS</h1>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./bootstrap.bundle.min.js"></script>
+    <script src="clipboard.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
